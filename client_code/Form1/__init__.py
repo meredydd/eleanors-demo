@@ -16,3 +16,4 @@ class Form1(Form1Template):
         """This method is called when the component is clicked."""
         self.message_txt.text = f"Hello, {self.name_box.text}!"
         anvil.server.call('say_hello', self.name_box.text)
+        self.message_txt.text = ""
